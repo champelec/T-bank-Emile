@@ -6,10 +6,11 @@ func countUniqueWords(_ inputString: String) {
     print("Количество уникальных слов:", uniqueWords.count)
 }
 
-let string1 = "apple Orange pineapple PEAR"/Users/aleksejlesnikov/Desktop/T-bank/T-bank/T_bankApp.swift
-countUniqueWords(string1)
+let string1 = "apple Orange pineapple PEAR"
+countUniqueWords(string1) 
+
 let string2 = "apple aPPle appLe Apple"
-countUniqueWords(string1)
+countUniqueWords(string2) 
 ```
 *Задание №2*
 ```sh
@@ -85,7 +86,8 @@ func calculateAverageGrade(_ dictionary: [String: Int?]) {
     } else {
         let grades = Array(nonNilStudents.values)
         let average = Double(grades.reduce(0, +)) / Double(grades.count)
-        print("Средняя оценка: \(average)")
+        let output = average.truncatingRemainder(dividingBy: 1) == 0 ? Int(average) : average
+        print("Средняя оценка: \(output)")
     }
 }
 
