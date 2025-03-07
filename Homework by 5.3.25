@@ -80,19 +80,19 @@ for (length, strings) in groupedArray2 {
 ```sh
 func calculateAverageGrade(_ dictionary: [String: Int?]) {
     let nonNilStudents = dictionary.compactMapValues { $0 }
-    
-    if nonNilStudents.isEmpty {
+    guard !nonNilStudents.isEmpty else {
         print("Никто не сдал")
-    } else {
-        let grades = Array(nonNilStudents.values)
-        let average = Double(grades.reduce(0, +)) / Double(grades.count)
-        let output = average.truncatingRemainder(dividingBy: 1) == 0 ? Int(average) : average
-        print("Средняя оценка: \(output)")
+        return
     }
+
+    let grades = Array(nonNilStudents.values)
+    let average = Double(grades.reduce(0, +)) / Double(grades.count)
+    print("Средняя оценка: \(average)")
 }
 
 let grade1: [String: Int?] = ["A": 4, "B": 4, "C": 4]
 calculateAverageGrade(grade1)
+
 let grade2: [String: Int?] = ["A": nil, "B": nil, "C": nil]
 calculateAverageGrade(grade2)
 ```
