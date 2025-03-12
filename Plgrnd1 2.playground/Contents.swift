@@ -18,20 +18,19 @@ enum Genre {
 }
 class Library {
     var books: [Book] = []
-    func bookadd(_ book: Book){
+    func bookAdd(_ book: Book){
         books.append(book)
     }
     func bookfilter(by genre: Genre) -> [Book] {
         return books.filter { $0.genre == genre }
     }
     func bookfilter1(by name: String) -> [Book] {
-        return books.filter { $0.bookname.lowercased().contains(name.lowercased())
-        }
+        return books.filter { $0.bookname.lowercased().contains(name.lowercased())}
     }
 }
-class Reader{
-    var name: String
-    var discount: Double
+class Reader {
+    public var name: String
+    public var discount: Double
     private var basket: [Book] = []
     init(name: String, discount: Double) {
         self.name = name
@@ -63,9 +62,9 @@ enum SortOrder {
     case byPrice
 }
 let library = Library()
-library.bookadd(Book(bookname: "Гарри Поттер и философский камень", author: "Дж.К. Роулинг", price: 1000, genre: .fiction))
-library.bookadd(Book(bookname: "Война и мир", author: "Лев Толстой", price: 850, genre: .novel))
-library.bookadd(Book(bookname: "Стихотворение", author: "Владимир Маяковский", price: 540, genre: .poems))
+library.bookAdd(Book(bookname: "Гарри Поттер и философский камень", author: "Дж.К. Роулинг", price: 1000, genre: .fiction))
+library.bookAdd(Book(bookname: "Война и мир", author: "Лев Толстой", price: 850, genre: .novel))
+library.bookAdd(Book(bookname: "Стихотворение", author: "Владимир Маяковский", price: 540, genre: .poems))
 let reader = Reader(name: "Алиса", discount: 1.5)
 let novelBooks = library.bookfilter(by: .novel)
 reader.basketadd(novelBooks)
