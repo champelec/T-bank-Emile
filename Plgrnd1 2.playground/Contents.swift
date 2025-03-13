@@ -35,7 +35,7 @@ class Library {
 }
 
 class Reader {
-    public var name: String
+    private var name: String
     private var basket: [Book] = []
     
     init(name: String) {
