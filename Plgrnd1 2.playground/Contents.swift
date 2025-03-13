@@ -1,10 +1,10 @@
 import Foundation
 
 struct Book {
-    var bookname: String
-    var author: String
-    var price: Double
-    var genre: Genre
+    let bookname: String
+    let author: String
+    let price: Double
+    let genre: Genre
 }
 
 enum Genre {
@@ -19,31 +19,30 @@ enum Genre {
 }
 
 class Library {
-    var books: [Book] = []
-    func bookAdd(_ book: Book){
+    private var books: [Book] = [] // Ограниченный доступ к массиву книг
+    
+    func bookAdd(_ book: Book) {
         books.append(book)
     }
     
     func bookfilter(by genre: Genre) -> [Book] {
-        books.filter { $0.genre == genre }
-        
+        return books.filter { $0.genre == genre }
     }
+    
     func bookfilter(by name: String) -> [Book] {
-        books.filter { $0.bookname.lowercased().contains(name.lowercased())
-        }
+        return books.filter { $0.bookname.lowercased().contains(name.lowercased()) }
     }
 }
 
 class Reader {
     public var name: String
-    public var discount: Double
     private var basket: [Book] = []
-    init(name: String, discount: Double) {
+    
+    init(name: String) {
         self.name = name
-        self.discount = discount
     }
     
-    func basketadd(_ books: [Book]) {
+    func basketAdd(_ books: [Book]) {
         basket.append(contentsOf: books)
     }
     
@@ -51,38 +50,43 @@ class Reader {
         return basket
     }
     
-    func priceSum() -> Double {
+    func priceSum(with discount: Double) -> Double {
         let total = basket.reduce(0) { $0 + $1.price }
         return total - (total * discount / 100)
     }
     
-    func basketToolsSorted(by order: SortOrder) -> [Book] {
+    func basketSorted(by order: SortOrder) -> [Book] {
         switch order {
         case .alphabetical:
-            basket.sorted { $0.bookname < $1.bookname }
+            return basket.sorted { $0.bookname < $1.bookname }
         case .byPrice:
-            basket.sorted { $0.price < $1.price }
-        
-            }
+            return basket.sorted { $0.price < $1.price }
         }
     }
+}
 
 enum SortOrder {
     case alphabetical
     case byPrice
 }
 
+// Пример использования
 let library = Library()
 library.bookAdd(Book(bookname: "Гарри Поттер и философский камень", author: "Дж.К. Роулинг", price: 1000, genre: .fiction))
 library.bookAdd(Book(bookname: "Война и мир", author: "Лев Толстой", price: 850, genre: .novel))
 library.bookAdd(Book(bookname: "Стихотворение", author: "Владимир Маяковский", price: 540, genre: .poems))
-let reader = Reader(name: "Алиса", discount: 1.5)
+
+let reader = Reader(name: "Алиса")
+
 let novelBooks = library.bookfilter(by: .novel)
-reader.basketadd(novelBooks)
+reader.basketAdd(novelBooks)
+
 let booksWithName = library.bookfilter(by: "Гарри")
-reader.basketadd(booksWithName)
-for book in reader.basketToolsSorted(by: .alphabetical) {
+reader.basketAdd(booksWithName)
+
+for book in reader.basketSorted(by: .alphabetical) {
     print("• \(book.bookname) от \(book.author) - \(book.price) руб.")
 }
-print("• Цена корзины: \(reader.priceSum()) руб.")
 
+let discount = 1.5
+print("• Цена корзины: \(reader.priceSum(with: discount)) руб.")
