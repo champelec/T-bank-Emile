@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		FC32E3E12DAFFDA700DA78C9 /* Emile HW8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emile HW8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC32E3532DAFBFB800DA78C9 /* Emile DZ8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emile DZ8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FC32E3F32DAFFDA800DA78C9 /* Exceptions for "Emile HW8" folder in "Emile HW8" target */ = {
+		FC32E3652DAFBFB900DA78C9 /* Exceptions for "Emile DZ8" folder in "Emile DZ8" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = FC32E3E02DAFFDA700DA78C9 /* Emile HW8 */;
+			target = FC32E3522DAFBFB800DA78C9 /* Emile DZ8 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FC32E3E32DAFFDA700DA78C9 /* Emile HW8 */ = {
+		FC32E3552DAFBFB800DA78C9 /* Emile DZ8 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				FC32E3F32DAFFDA800DA78C9 /* Exceptions for "Emile HW8" folder in "Emile HW8" target */,
+				FC32E3652DAFBFB900DA78C9 /* Exceptions for "Emile DZ8" folder in "Emile DZ8" target */,
 			);
-			path = "Emile HW8";
+			path = "Emile DZ8";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FC32E3DE2DAFFDA700DA78C9 /* Frameworks */ = {
+		FC32E3502DAFBFB800DA78C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FC32E3D82DAFFDA700DA78C9 = {
+		FC32E34A2DAFBFB800DA78C9 = {
 			isa = PBXGroup;
 			children = (
-				FC32E3E32DAFFDA700DA78C9 /* Emile HW8 */,
-				FC32E3E22DAFFDA700DA78C9 /* Products */,
+				FC32E3552DAFBFB800DA78C9 /* Emile DZ8 */,
+				FC32E3542DAFBFB800DA78C9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FC32E3E22DAFFDA700DA78C9 /* Products */ = {
+		FC32E3542DAFBFB800DA78C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC32E3E12DAFFDA700DA78C9 /* Emile HW8.app */,
+				FC32E3532DAFBFB800DA78C9 /* Emile DZ8.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC32E3E02DAFFDA700DA78C9 /* Emile HW8 */ = {
+		FC32E3522DAFBFB800DA78C9 /* Emile DZ8 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC32E3F42DAFFDA800DA78C9 /* Build configuration list for PBXNativeTarget "Emile HW8" */;
+			buildConfigurationList = FC32E3662DAFBFB900DA78C9 /* Build configuration list for PBXNativeTarget "Emile DZ8" */;
 			buildPhases = (
-				FC32E3DD2DAFFDA700DA78C9 /* Sources */,
-				FC32E3DE2DAFFDA700DA78C9 /* Frameworks */,
-				FC32E3DF2DAFFDA700DA78C9 /* Resources */,
+				FC32E34F2DAFBFB800DA78C9 /* Sources */,
+				FC32E3502DAFBFB800DA78C9 /* Frameworks */,
+				FC32E3512DAFBFB800DA78C9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FC32E3E32DAFFDA700DA78C9 /* Emile HW8 */,
+				FC32E3552DAFBFB800DA78C9 /* Emile DZ8 */,
 			);
-			name = "Emile HW8";
+			name = "Emile DZ8";
 			packageProductDependencies = (
 			);
-			productName = "Emile HW8";
-			productReference = FC32E3E12DAFFDA700DA78C9 /* Emile HW8.app */;
+			productName = "Emile DZ8";
+			productReference = FC32E3532DAFBFB800DA78C9 /* Emile DZ8.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FC32E3D92DAFFDA700DA78C9 /* Project object */ = {
+		FC32E34B2DAFBFB800DA78C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					FC32E3E02DAFFDA700DA78C9 = {
+					FC32E3522DAFBFB800DA78C9 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = FC32E3DC2DAFFDA700DA78C9 /* Build configuration list for PBXProject "Emile HW8" */;
+			buildConfigurationList = FC32E34E2DAFBFB800DA78C9 /* Build configuration list for PBXProject "Emile DZ8" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = FC32E3D82DAFFDA700DA78C9;
+			mainGroup = FC32E34A2DAFBFB800DA78C9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = FC32E3E22DAFFDA700DA78C9 /* Products */;
+			productRefGroup = FC32E3542DAFBFB800DA78C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC32E3E02DAFFDA700DA78C9 /* Emile HW8 */,
+				FC32E3522DAFBFB800DA78C9 /* Emile DZ8 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FC32E3DF2DAFFDA700DA78C9 /* Resources */ = {
+		FC32E3512DAFBFB800DA78C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FC32E3DD2DAFFDA700DA78C9 /* Sources */ = {
+		FC32E34F2DAFBFB800DA78C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FC32E3F52DAFFDA800DA78C9 /* Debug */ = {
+		FC32E3672DAFBFB900DA78C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FAV3L5RL4M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Emile HW8/Info.plist";
+				INFOPLIST_FILE = "Emile DZ8/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -158,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "emil.Emile-HW8";
+				PRODUCT_BUNDLE_IDENTIFIER = "emil.Emile-DZ8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -166,7 +166,7 @@
 			};
 			name = Debug;
 		};
-		FC32E3F62DAFFDA800DA78C9 /* Release */ = {
+		FC32E3682DAFBFB900DA78C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -175,7 +175,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FAV3L5RL4M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Emile HW8/Info.plist";
+				INFOPLIST_FILE = "Emile DZ8/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -186,7 +186,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "emil.Emile-HW8";
+				PRODUCT_BUNDLE_IDENTIFIER = "emil.Emile-DZ8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -194,7 +194,7 @@
 			};
 			name = Release;
 		};
-		FC32E3F72DAFFDA800DA78C9 /* Debug */ = {
+		FC32E3692DAFBFB900DA78C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		FC32E3F82DAFFDA800DA78C9 /* Release */ = {
+		FC32E36A2DAFBFB900DA78C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC32E3DC2DAFFDA700DA78C9 /* Build configuration list for PBXProject "Emile HW8" */ = {
+		FC32E34E2DAFBFB800DA78C9 /* Build configuration list for PBXProject "Emile DZ8" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC32E3F72DAFFDA800DA78C9 /* Debug */,
-				FC32E3F82DAFFDA800DA78C9 /* Release */,
+				FC32E3692DAFBFB900DA78C9 /* Debug */,
+				FC32E36A2DAFBFB900DA78C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC32E3F42DAFFDA800DA78C9 /* Build configuration list for PBXNativeTarget "Emile HW8" */ = {
+		FC32E3662DAFBFB900DA78C9 /* Build configuration list for PBXNativeTarget "Emile DZ8" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC32E3F52DAFFDA800DA78C9 /* Debug */,
-				FC32E3F62DAFFDA800DA78C9 /* Release */,
+				FC32E3672DAFBFB900DA78C9 /* Debug */,
+				FC32E3682DAFBFB900DA78C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FC32E3D92DAFFDA700DA78C9 /* Project object */;
+	rootObject = FC32E34B2DAFBFB800DA78C9 /* Project object */;
 }

@@ -1,6 +1,6 @@
 //
 //  ImageLoaderPresenter.swift
-//  Emile HW8
+//  Emile DZ8
 //
 //  Created by Эмиль Шамшетдинов on 16.04.2025.
 //
@@ -26,23 +26,25 @@ final class ImageLoaderPresenter {
     }
     
     private func loadProducts() {
-        view?.showLoadingIndicator(true)
-        
-        networkService.fetchProducts { [weak self] result in
-            DispatchQueue.main.async {
-                self?.view?.showLoadingIndicator(false)
-                
-                switch result {
-                case .success(let products):
-                    self?.products = products
-                    self?.startImageDownload()
-                    self?.view?.reloadData()
-                case .failure(let error):
-                    self?.view?.showError(message: error.localizedDescription)
+            print("Показываем индикатор")
+            view?.showLoadingIndicator(true)
+            
+            networkService.fetchProducts { [weak self] result in
+                print("Скрываем индикатор")
+                DispatchQueue.main.async {
+                    self?.view?.showLoadingIndicator(false)
+                    
+                    switch result {
+                    case .success(let products):
+                        self?.products = products
+                        self?.startImageDownload()
+                        self?.view?.reloadData()
+                    case .failure(let error):
+                        self?.view?.showError(message: error.localizedDescription)
+                    }
                 }
             }
         }
-    }
     
     private func startImageDownload() {
         downloadProgress.removeAll()

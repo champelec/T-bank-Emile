@@ -1,6 +1,6 @@
 //
 //  ImageLoaderViewProtocol.swift
-//  Emile HW8
+//  Emile DZ8
 //
 //  Created by Эмиль Шамшетдинов on 16.04.2025.
 //

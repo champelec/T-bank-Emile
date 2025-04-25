@@ -1,6 +1,6 @@
 //
 //  ImageLoaderViewController.swift
-//  Emile HW8
+//  Emile DZ8
 //
 //  Created by Эмиль Шамшетдинов on 16.04.2025.
 //
@@ -12,6 +12,7 @@ final class ImageLoaderViewController: UIViewController {
     private let activityIndicator = UIActivityIndicatorView(style: .large)
     private let progressView = UIProgressView(progressViewStyle: .default)
     private let progressLabel = UILabel()
+    private let assembly = Assembly()
     
     // MARK: - Lifecycle
     init(presenter: ImageLoaderPresenterProtocol) {
@@ -88,12 +89,20 @@ final class ImageLoaderViewController: UIViewController {
     
     private func setupActivityIndicator() {
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.style = .large
+        activityIndicator.color = .systemRed
+        activityIndicator.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        activityIndicator.layer.cornerRadius = 10
         activityIndicator.hidesWhenStopped = true
+        
         view.addSubview(activityIndicator)
+        view.bringSubviewToFront(activityIndicator)
         
         NSLayoutConstraint.activate([
             activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            activityIndicator.widthAnchor.constraint(equalToConstant: 100),
+            activityIndicator.heightAnchor.constraint(equalToConstant: 100)
         ])
     }
 }
@@ -153,7 +162,7 @@ extension ImageLoaderViewController: UITableViewDataSource, UITableViewDelegate 
         }
         
         let product = presenter.product(at: indexPath.row)
-        cell.configure(with: product)
+        cell.configure(with: product, imageLoaderService: assembly.imageLoaderService)
         return cell
     }
     

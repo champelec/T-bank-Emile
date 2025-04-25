@@ -1,14 +1,14 @@
 //
 //  ProductCell.swift
-//  Emile HW8
+//  Emile DZ8
 //
 //  Created by Эмиль Шамшетдинов on 16.04.2025.
 //
 import UIKit
 
 final class ProductCell: UITableViewCell {
+    // MARK: - UI Elements
     static let reuseIdentifier = "ProductCell"
-    
     private let productImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -24,7 +24,9 @@ final class ProductCell: UITableViewCell {
         return label
     }()
     
+    // MARK: - Properties
     private var currentImageURL: String?
+    private var imageLoaderService: ImageLoaderServiceProtocol?
     
     // MARK: - Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -43,8 +45,9 @@ final class ProductCell: UITableViewCell {
     }
     
     // MARK: - Configuration
-    func configure(with product: Product) {
+    func configure(with product: Product, imageLoaderService: ImageLoaderServiceProtocol) {
         titleLabel.text = product.title
+        self.imageLoaderService = imageLoaderService
         loadImage(from: product.image)
     }
     
@@ -71,33 +74,13 @@ final class ProductCell: UITableViewCell {
     
     private func loadImage(from urlString: String) {
         currentImageURL = urlString
-        
-        if let cachedImage = ImageCache.shared.image(for: urlString) {
-            productImageView.image = cachedImage
-            return
-        }
-        
-        guard let url = URL(string: urlString) else { return }
-        
-        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-            guard let self = self else { return }
-            
-            if let error = error {
-                print("Error loading image: \(error.localizedDescription)")
-                return
-            }
-            
-            guard let data = data, let image = UIImage(data: data) else {
-                return
-            }
-            
-            ImageCache.shared.save(image, for: urlString)
-            
+        imageLoaderService?.loadImage(from: urlString) { [weak self] image in
             DispatchQueue.main.async {
-                if self.currentImageURL == urlString {
-                    self.productImageView.image = image
+                // Проверяем, что ячейка еще отображает тот же URL
+                if self?.currentImageURL == urlString {
+                    self?.productImageView.image = image
                 }
             }
-        }.resume()
+        }
     }
 }
