@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Открытие приложения</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        window.location = 'customscheme1://path/to/payment/{{ payment_id }}';
+      }, 100);
+
+      setTimeout(function() {
+        window.location = 'customscheme2://path/to/payment/{{ payment_id }}';
+      }, 1500);
+
+      setTimeout(function() {
+        window.location = '/fallback/';
+      }, 3000);
+    }
+  </script>
+</head>
+<body>
+  <p>Пытаемся открыть приложение... Если не получилось, <a href="/fallback/">нажмите сюда</a>.</p>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Открытие приложения</title>
+    <script>
+        window.onload = function() {
+            // Первая попытка открыть приложение
+            window.location.href = "{{ redirect_url }}";
+            
+            // Fallback через 2 секунды
+            setTimeout(function() {
+                window.location.href = "{{ fallback_url }}";
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <p>Перенаправляем в приложение...</p>
+</body>
+</html>

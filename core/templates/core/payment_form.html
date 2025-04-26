@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма оплаты</title>
+</head>
+<body>
+    <h1>Форма оплаты</h1>
+    <form method="get" action="{% url 'get_redirect_link' %}">
+        <label>Payment ID:</label>
+        <input type="text" name="paymentid" required><br><br>
+
+        <label>Платформа:</label>
+        <select name="platform" required>
+            <option value="iOS">iOS</option>
+            <option value="Android">Android</option>
+        </select><br><br>
+
+        <label>Версия приложения (только для iOS):</label>
+        <select name="app_version">
+            <option value="new">Новая версия</option>
+            <option value="old">Старая версия</option>
+        </select><br><br>
+
+        <button type="submit">Перейти к оплате</button>
+    </form>
+</body>
+</html>
