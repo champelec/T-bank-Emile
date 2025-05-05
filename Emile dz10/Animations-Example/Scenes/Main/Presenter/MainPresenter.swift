@@ -2,7 +2,7 @@
 //  MainPresenter.swift.swift
 //  Animations-Example
 //
-//  Created by Эмиль Шамшетдинов on 30.04.2025.
+//  Created by Dunaev Sergey V. on 06.04.2025.
 //
 
 import Foundation

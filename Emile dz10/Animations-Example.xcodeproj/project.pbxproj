@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		D736823D2DA2863B00461A7F /* Emile dz10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emile dz10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D736823D2DA2863B00461A7F /* Animations-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animations-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D736824F2DA2863C00461A7F /* Exceptions for "Animations-Example" folder in "Emile dz10" target */ = {
+		D736824F2DA2863C00461A7F /* Exceptions for "Animations-Example" folder in "Animations-Example" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				App/Info.plist,
 			);
-			target = D736823C2DA2863B00461A7F /* Emile dz10 */;
+			target = D736823C2DA2863B00461A7F /* Animations-Example */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -24,7 +24,7 @@
 		D736823F2DA2863B00461A7F /* Animations-Example */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D736824F2DA2863C00461A7F /* Exceptions for "Animations-Example" folder in "Emile dz10" target */,
+				D736824F2DA2863C00461A7F /* Exceptions for "Animations-Example" folder in "Animations-Example" target */,
 			);
 			path = "Animations-Example";
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 		D736823E2DA2863B00461A7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D736823D2DA2863B00461A7F /* Emile dz10.app */,
+				D736823D2DA2863B00461A7F /* Animations-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D736823C2DA2863B00461A7F /* Emile dz10 */ = {
+		D736823C2DA2863B00461A7F /* Animations-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D73682502DA2863C00461A7F /* Build configuration list for PBXNativeTarget "Emile dz10" */;
+			buildConfigurationList = D73682502DA2863C00461A7F /* Build configuration list for PBXNativeTarget "Animations-Example" */;
 			buildPhases = (
 				D73682392DA2863B00461A7F /* Sources */,
 				D736823A2DA2863B00461A7F /* Frameworks */,
@@ -76,11 +76,11 @@
 			fileSystemSynchronizedGroups = (
 				D736823F2DA2863B00461A7F /* Animations-Example */,
 			);
-			name = "Emile dz10";
+			name = "Animations-Example";
 			packageProductDependencies = (
 			);
 			productName = "URLSession-Example";
-			productReference = D736823D2DA2863B00461A7F /* Emile dz10.app */;
+			productReference = D736823D2DA2863B00461A7F /* Animations-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D73682382DA2863B00461A7F /* Build configuration list for PBXProject "Emile dz10" */;
+			buildConfigurationList = D73682382DA2863B00461A7F /* Build configuration list for PBXProject "Animations-Example" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D736823C2DA2863B00461A7F /* Emile dz10 */,
+				D736823C2DA2863B00461A7F /* Animations-Example */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +312,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D73682382DA2863B00461A7F /* Build configuration list for PBXProject "Emile dz10" */ = {
+		D73682382DA2863B00461A7F /* Build configuration list for PBXProject "Animations-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D73682532DA2863C00461A7F /* Debug */,
@@ -321,7 +321,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D73682502DA2863C00461A7F /* Build configuration list for PBXNativeTarget "Emile dz10" */ = {
+		D73682502DA2863C00461A7F /* Build configuration list for PBXNativeTarget "Animations-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D73682512DA2863C00461A7F /* Debug */,

@@ -2,7 +2,7 @@
 //  MainRouterInput.swift
 //  Animations-Example
 //
-//  Created by Эмиль Шамшетдинов on 30.04.2025.
+//  Created by Dunaev Sergey V. on 18.04.2025.
 //
 
 protocol MainRouterInput: AnyObject {
